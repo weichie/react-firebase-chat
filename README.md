@@ -1,3 +1,12 @@
+# React Firebase chat app
+This is a basic chat application to teach myself React and Firebase. I started writting a tutorial on how I did this on my blog, but stopped halfway because I got hired as a vuejs developer. So now I am not really into React anymore.
+
+This is the complete GIT repo of the Chat app.
+- A live demo of the app can be found here: [Chat app](http://chat.weichieprojects.com). (you need to register an account first to see the chat)
+- Tutorial part 1: [firebase setup](https://weichie.com/blog/react-firebase-chat-app/)
+- Tutorial part 2: incomlete...
+ 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
