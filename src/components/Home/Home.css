@@ -1,0 +1,40 @@
+.home--container{
+	margin: 0 auto;
+	width: 600px;
+}
+.home--container h1{
+	text-align: center;
+}
+
+.chat-list{
+	margin: 0; padding: 0;
+	list-style-type: none;
+}
+.chat-list li{
+	padding: 5px 0;
+}
+.chat-list em{
+	font-size: 12px;
+	font-style: normal;
+}
+.chat-list strong{
+	display: inline-block;
+	margin: 0 5px 0 10px;
+}
+.send-chat{
+	margin-top: 15px;
+}
+.send-chat input{
+	border: 1px solid #ccc;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	outline: none;
+}
+.send-chat input:focus{
+	border: 1px solid black;
+}
+.disallow-chat{
+	text-align: center;
+}

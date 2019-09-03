@@ -1,0 +1,37 @@
+.auth--container{
+	max-width: 500px;
+	width: 95%;
+	margin: 0 auto;
+}
+.auth--container{
+	text-align: center;
+}
+.auth--container label{
+	display: block;
+	text-align: left;
+}
+.auth--container input{
+	border: none;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	width: 100%;
+	padding: 15px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	outline: none;
+}
+.auth--container input:focus{
+	border-bottom: 1px solid #000;
+}
+.auth--container button{
+	display: inline-block;
+	padding: 15px 35px;
+	color: #fff;
+	background: #4D8FAC;
+	transition: background .25s ease;
+	cursor: pointer;
+	border: none;
+}
+.auth--container button:hover{
+	background: #5D8CAE;
+}
