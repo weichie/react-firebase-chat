@@ -13,15 +13,16 @@ class Chatbox extends React.Component{
 		const chatRef = firebase.database().ref('general');
 		chatRef.on('value', snapshot => {
 			const getChats = snapshot.val();
-			let chats = [];
+			let ascChats = [];
 			for(let chat in getChats){
-				chats.push({
+				ascChats.push({
 					id: chat,
 					message: getChats[chat].message,
 					user: getChats[chat].user,
 					date: getChats[chat].timestamp
 				});
 			}
+			const chats = ascChats.reverse();
 			this.setState({chats});
 		});
 	}
