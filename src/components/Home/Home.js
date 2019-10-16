@@ -39,11 +39,11 @@ class Home extends React.Component{
 				<h1>Welcome to the chat!</h1>
 				{this.props.user && 
 					<div className="allow-chat">
-						<Chatbox />
-
 						<form className="send-chat" onSubmit={this.handleSubmit}>
 							<input type="text" name="message" id="message" value={this.state.message} onChange={this.handleChange} placeholder='Leave a message...' />
 						</form>
+
+						<Chatbox />
 					</div>
 				}
 				{!this.props.user && 
