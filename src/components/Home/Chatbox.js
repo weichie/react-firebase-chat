@@ -15,7 +15,6 @@ class Chatbox extends React.Component{
 			const getChats = snapshot.val();
 			let ascChats = [];
 			for(let chat in getChats){
-				console.log(getChats[chat].message);
 				if(getChats[chat].message !== ''){
 					ascChats.push({
 						id: chat,
