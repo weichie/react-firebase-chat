@@ -15,12 +15,15 @@ class Chatbox extends React.Component{
 			const getChats = snapshot.val();
 			let chats = [];
 			for(let chat in getChats){
-				chats.push({
-					id: chat,
-					message: getChats[chat].message,
-					user: getChats[chat].user,
-					date: getChats[chat].timestamp
-				});
+				console.log(getChats[chat].message);
+				if(getChats[chat].message !== ''){
+					chats.push({
+						id: chat,
+						message: getChats[chat].message,
+						user: getChats[chat].user,
+						date: getChats[chat].timestamp
+					});
+				}
 			}
 			this.setState({chats});
 		});

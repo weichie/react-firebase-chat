@@ -20,14 +20,17 @@ class Home extends React.Component{
 
 	handleSubmit = e => {
 		e.preventDefault();
-		const chatRef = firebase.database().ref('general');
-		const chat = {
-			message: this.state.message,
-			user: this.props.user.displayName,
-			timestamp: new Date().getTime()
+		if(this.state.message !== ''){
+			const chatRef = firebase.database().ref('general');
+			const chat = {
+				message: this.state.message,
+				user: this.props.user.displayName,
+				timestamp: new Date().getTime()
+			}
+			
+			chatRef.push(chat);
+			this.setState({message: ''});
 		}
-		chatRef.push(chat);
-		this.setState({message: ''});
 	}
 
 	render(){
